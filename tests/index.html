@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><base href="../"><title>TCS – Kiểm thử</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<style>#results{font:13px/1.6 "Roboto Mono",monospace;padding:16px}#results .f{color:var(--er)}#results .p{color:var(--ok)}#sandbox{display:none}</style>
+</head><body>
+<div id="results">Đang chạy kiểm thử…</div>
+<!-- Khung DOM giống index.html để app.js chạy được -->
+<div id="sandbox"><nav id="nav"></nav><main id="app"></main><div id="toast"></div></div>
+<script>try{localStorage.removeItem('tcs-theme')}catch(e){}</script>
+<script src="js/app.js"></script>
+<script src="tests/app.test.js"></script>
+</body></html>

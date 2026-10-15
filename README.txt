@@ -32,6 +32,12 @@ CÁCH CHẠY
   Mở index.html bằng Chrome/Edge. Không cần cài đặt hay máy chủ.
   Giữ nguyên cấu trúc thư mục để trang nạp đúng css, js và ảnh.
 
+KIỂM THỬ TỰ ĐỘNG
+  tests/index.html + tests/app.test.js: kiểm thử công thức tính phí, thu ngân, lane vào/ra,
+  lọc lịch sử, kiểm tra dữ liệu nhập và render toàn bộ màn hình.
+  Chạy: tại thư mục dự án gõ  python3 -m http.server 8765  rồi mở
+  http://127.0.0.1:8765/tests/index.html  (dòng đầu trang hiện số ca đạt / lỗi).
+
 DÙNG ẢNH THẬT (TÙY CHỌN)
   1. Chế độ ảnh thật đang BẬT (const CFG={photos:true} trong js/app.js)
   2. Đặt ảnh .jpg vào assets/img/photos/ theo tên:
