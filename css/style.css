@@ -228,3 +228,9 @@ body.no-nav main{padding:20px}
 @media(prefers-color-scheme:dark){:root:not([data-theme=light]) .role .av{color:var(--pr)}}
 @media(max-width:960px){.home{grid-template-columns:1fr;min-height:0}.home-hero{min-height:420px}}
 @media(max-width:560px){body.no-nav main{padding:12px}.home{gap:12px}.home-hero{min-height:0;border-radius:18px}.home-in{padding:18px 18px 22px;gap:18px}.home-in .logobox img{height:36px}.home-txt h1{font-size:24px}.home-txt p{font-size:13.5px}.home-f{grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}.home-f li{padding:9px 11px}.home-f span{font-size:11.5px}.home-login{padding:20px 16px;border-radius:18px}.home-bar{margin-bottom:18px}.home-login h2{font-size:22px}.role{padding:12px}.role .av{width:40px;height:40px}}
+/* ===== Trạng thái chờ xử lý, thông báo ===== */
+.verdict.wa{background:linear-gradient(90deg,#9a6700,#c58a12)}
+.bar2.wa{background:linear-gradient(135deg,#9a6700,#c58a12)}
+.bb.wa{border-color:#f0b451}.bb.wa i{background:#f0b451;color:#2b2208}
+#bell{position:relative}
+#bell .cnt{display:inline-grid;place-items:center;min-width:20px;height:20px;padding:0 6px;margin-left:4px;border-radius:999px;background:var(--er);color:#fff;font-size:11px;font-weight:700}

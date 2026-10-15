@@ -32,8 +32,18 @@ CÁCH CHẠY
   Mở index.html bằng Chrome/Edge. Không cần cài đặt hay máy chủ.
   Giữ nguyên cấu trúc thư mục để trang nạp đúng css, js và ảnh.
 
+KỊCH BẢN MÔ PHỎNG (DỮ LIỆU MẪU)
+  Lane vào : 51C-123.45, 51C-660.44 đạt · 43C-357.91 chờ COSYS xác nhận (bấm Truy vấn lại COSYS)
+             60C-555.12 chưa xuất kho · 61C-246.80 chưa đăng ký · 51C-777.88 sai loại xe · 29A-999.99 không có lô
+  Lane ra  : 50H-135.79 đã thanh toán, cho ra · 62C-888.66 quá 15 phút sau thanh toán, phát sinh phí
+             51C-246.13 chưa thanh toán · 51D-468.20 QR chờ ngân hàng xác nhận · 29A-999.99 không có phiên
+  Thu ngân : QR có 3 nút Thành công / Thất bại / Chờ xác nhận; giao dịch chờ được Tra soát tại quầy
+  COSYS    : Danh mục lô hàng có Đồng bộ ngay / Giả lập lỗi / Giả lập phản hồi chậm
+  Thông báo: nút 🔔 trên tiêu đề mở Trung tâm thông báo (lọc Thành công / Thất bại / Chờ xử lý);
+             Bảng điều khiển có Hàng chờ xử lý và Thông báo gần đây.
+
 KIỂM THỬ TỰ ĐỘNG
-  tests/index.html + tests/app.test.js: kiểm thử công thức tính phí, thu ngân, lane vào/ra,
+  tests/index.html + tests/app.test.js (49 ca): kiểm thử công thức tính phí, thu ngân, lane vào/ra,
   lọc lịch sử, kiểm tra dữ liệu nhập và render toàn bộ màn hình.
   Chạy: tại thư mục dự án gõ  python3 -m http.server 8765  rồi mở
   http://127.0.0.1:8765/tests/index.html  (dòng đầu trang hiện số ca đạt / lỗi).
